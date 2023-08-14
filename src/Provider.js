@@ -14,7 +14,7 @@ const Provider = (props) =>{
 const [lyrics,setLyrics] = useState(state);
 
 useEffect(()=>{
-  axios.get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=10&country=in&f_has_lyrics=1&apikey=98849a1aad58bdb62a7465bbe1fe735a`)
+  axios.get(`https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/chart.tracks.get?chart_name=top&page=1&page_size=10&country=in&f_has_lyrics=1&apikey=849a4b2e49c7ac735462164b0ac26c04`)
     .then(res=>{
 
 const responseData = res.data.message.body.track_list;
